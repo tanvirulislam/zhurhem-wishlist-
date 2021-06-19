@@ -1,0 +1,83 @@
+@font-face {
+  font-family: gill;
+  src: url(/Gill\ Sans.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgorund-color: #000000;
+  --font-color: #ffffff;
+  --secondary-font-color: #7f7f7f;
+  --hover-color: #c4a654;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+body {
+  background: var(--backgorund-color);
+}
+body,
+input,
+button {
+  color: var(--font-color);
+  font-family: gill;
+  /* color: var(--font-color); */
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-panel img {
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+.form-div {
+  background: var(--font-color);
+  padding: 2rem;
+}
+.form-div p {
+  color: var(--backgorund-color);
+  margin-bottom: 1rem;
+}
+.form-div input {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--secondary-font-color);
+  color: var(--backgorund-color);
+  min-width: 22rem;
+}
+.form-div input::placeholder {
+  color: var(--backgorund-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.form-div input:focus {
+  outline: none;
+  border-radius: 0 !important;
+  border-color: #c4a654;
+}
+.form-div button {
+  background: var(--backgorund-color);
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 2px;
+}

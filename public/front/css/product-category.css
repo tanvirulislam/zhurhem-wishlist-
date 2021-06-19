@@ -1,0 +1,231 @@
+@font-face {
+  font-family: gill;
+  src: url(/Gill\ Sans.otf);
+}
+@font-face {
+  font-family: gothic;
+  src: url(/gothic/gothic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgorund-color: #000000;
+  --font-color: #ffffff;
+  --secondary-font-color: #7f7f7f;
+  --hover-color: #c4a654;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.container {
+  /* max-width: 1350px; */
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+html {
+  width: 100%;
+}
+
+body {
+  background: var(--backgorund-color);
+  /* overflow-x: hidden; */
+}
+
+body,
+input {
+  color: var(--font-color);
+  font-family: gill;
+  /* color: var(--font-color); */
+}
+
+#filter {
+  background: var(--font-color);
+  padding: 3rem 1rem;
+}
+.filter-div {
+  color: var(--backgorund-color);
+  display: flex;
+}
+.filter {
+  font-family: gothic;
+  padding: 0.6rem 2.4rem;
+  text-transform: capitalize;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  border: 1px solid var(--secondary-font-color);
+}
+.filter:not(:last-child) {
+  margin-right: 1rem;
+}
+.all-filters {
+  padding: 0.6rem 4rem;
+}
+.sort-by {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+}
+.sort-by img {
+  width: 10px;
+  margin-left: 1rem;
+}
+/* Product Section */
+/* Product Section */
+/* Product Section */
+#products {
+  background: var(--font-color);
+}
+.product-container {
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  /* overflow: hidden; */
+}
+
+.product-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+}
+.img-link {
+  height: 100%;
+}
+.product-img a img {
+  height: 100%;
+  object-fit: contain;
+}
+.product-img img:not(:last-child) {
+  height: 100%;
+  object-fit: contain;
+}
+.heart-black {
+  width: 25px;
+  /* background: green; */
+}
+.wish-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+.add-to-bag {
+  font-family: gothic;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--backgorund-color);
+  text-transform: uppercase;
+  padding: 0.5rem 5rem;
+  padding-bottom: 0.6rem;
+  background: var(--font-color);
+  border: 1px solid var(--backgorund-color);
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4rem;
+  font-size: 0.8rem;
+  transition: 0.3s linear;
+  opacity: 0;
+}
+.add-to-bag:hover {
+  color: var(--hover-color);
+  background: transparent;
+  border: 1px solid var(--hover-color);
+}
+.product-div:hover .add-to-bag {
+  opacity: 1;
+}
+.product-div-bottom {
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.product-div-bottom p {
+  color: var(--backgorund-color);
+}
+.product-div-bottom p:last-child {
+  /* font-weight: 600;
+  margin-top: 0.5rem; */
+}
+@media only screen and (max-width: 769px) {
+  #filter {
+    padding: 0.5rem;
+  }
+  #filter .container {
+    padding: 0.2rem;
+  }
+  .filter {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    padding-bottom: 0.4rem;
+  }
+  .filter:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  .all-filters {
+    padding: 0.3rem 1.2rem;
+  }
+  .sort-by {
+    padding: 0.1rem 0.5rem;
+  }
+  .sort-by img {
+    margin-left: 0.3rem;
+  }
+  .product-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .product-div {
+    height: 40rem;
+  }
+  .add-to-bag {
+    opacity: 1;
+    padding-bottom: 0.7rem;
+  }
+ 
+}
+/* @media (min-width: 1199.98px) and (max-width: 1440px)
+ {
+  .respos_btn{
+    margin-left: -250px!important;
+
+  }
+
+} */
+/* Product Section */
+/* Product Section */
+/* Product Section */
+/* Product Section */
+.category-form{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
